@@ -12,7 +12,7 @@ ENV LD_LIBRARY_PATH /usr/local/caffe2_build/lib:${LD_LIBRARY_PATH}
 
 
 # Install Python dependencies
-RUN pip install -r /detectron/requirements.txt
+RUN pip install -r requirements.txt
 
 # Install the COCO API
 RUN git clone https://github.com/cocodataset/cocoapi.git /cocoapi
