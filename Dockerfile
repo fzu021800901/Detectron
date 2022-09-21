@@ -13,7 +13,8 @@ RUN cd /detectron && git checkout d56e267
 
 # Install Python dependencies
 RUN pip install --upgrade pip
-RUN pip install -r /detectron/requirements.txt
+RUN pip install -i http://pypi.douban.com/simple/ --trusted-host pypi.douban.com numpy>=1.13 pyyaml==3.12 matplotlib opencv-python==4.1.1.26 setuptools Cython mock scipy six future protobuf
+# RUN pip install -r /detectron/requirements.txt
 
 # Install the COCO API
 RUN git clone https://github.com/cocodataset/cocoapi.git /cocoapi
