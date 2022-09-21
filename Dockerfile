@@ -12,7 +12,7 @@ RUN git clone https://github.com/facebookresearch/detectron /detectron
 RUN cd /detectron && git checkout d56e267
 
 # Install Python dependencies
-
+RUN pip install --upgrade pip
 RUN pip install -r /detectron/requirements.txt
 
 # Install the COCO API
